@@ -4,31 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portifólio</title>
+    <title>Portfólio</title>
   </head>
+  <style>
+    img {
+      border-radius: 450rem;
+      width: 15rem;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    button {
+      margin: 5px;
+      border: none;
+      padding: 1rem;
+      width: 15em;
+      background-color: lavender;
+      color: #bdbaca;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    a {
+      text-decoration: none;
+      color: dimgray;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    body {
+      background-color: lavenderblush;
+      color: dimgray;
+      font-size: 15px;
+      padding: 20px;
+      margin: 0 auto;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+    }
+  </style>
   <body>
-    <a href="#sobre">Sobre mim</a>
-    <a href="#habilidades">Habilidades</a>
-    <a href="https://www.linkedin.com/in/anacarolinaraca/">Linkedin</a>
-    <a href="#fotoAna">Minha foto</a>
+    <button><a href="#sobre">Sobre mim</a></button>
+    <button><a href="#habilidades">Habilidades</a></button>
+    <button>
+      <a href="https://www.linkedin.com/in/anacarolinaraca/">Linkedin</a>
+    </button>
+    <button><a href="#fotoAna">Minha foto</a></button>
     <br />
-    <img
-      src="fotoAna.jpg"
-      alt="Minha foto de óculos"
-      id="fotoAna"
-      width="250px"
-    />
+    <img src="fotoAna.jpg" alt="Minha foto de óculos" id="fotoAna" />
     <h1>Ana Carolina Rodrigues de Almeida César Alves</h1>
     <h2 id="sobre">Sobre mim</h2>
     <p>
-      Eu sou formada em Engenharia Química e Técnica em Química, tenho 24 anos,
+      Eu sou bacharel em Engenharia Química e Técnico em Química, tenho 24 anos,
       atualmente estudante de <strong>Desenvolvimento Web</strong> na Trybe.
     </p>
+    <br />
+    <p id="city"><strong>Belo Horizonte - Minas Gerais</strong></p>
     <h2 id="habilidades">Habilidades</h2>
     <ul>
-      <li>HTML</li>
-      <li><strong>CSS</strong></li>
-      <li>Excel</li>
+      <li class="html">HTML</li>
+      <li class="css">CSS</li>
+      <li class="excel">Excel</li>
     </ul>
   </body>
 </html>
