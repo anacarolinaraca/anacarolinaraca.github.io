@@ -7,12 +7,14 @@
     <title>Portfólio</title>
   </head>
   <style>
-    img {
-      border-radius: 450rem;
-      width: 15rem;
-      margin-top: 20px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    body {
+      background-color: lavenderblush;
+      color: dimgray;
+      font-size: 15px;
+      padding: 20px;
+      margin: 0 auto;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
     }
 
     button {
@@ -31,6 +33,29 @@
       color: dimgray;
     }
 
+    img {
+      border-radius: 450rem;
+      width: 15rem;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .imagem {
+      margin-right: 50px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .description {
+      margin-left: 50px;
+      width: 500px;
+      font-style: normal;
+      text-align: left;
+      margin-top: 50px;
+      display: inline-grid;
+    }
+
     ul {
       padding: 0;
     }
@@ -39,38 +64,42 @@
       list-style: none;
     }
 
-    body {
-      background-color: lavenderblush;
-      color: dimgray;
-      font-size: 15px;
-      padding: 20px;
-      margin: 0 auto;
-      font-family: "Montserrat", sans-serif;
-      text-align: center;
+    li:nth-child(1),
+    :nth-child(3) {
+      font-style: italic;
     }
   </style>
   <body>
-    <button><a href="#sobre">Sobre mim</a></button>
-    <button><a href="#habilidades">Habilidades</a></button>
-    <button>
-      <a href="https://www.linkedin.com/in/anacarolinaraca/">Linkedin</a>
-    </button>
-    <button><a href="#fotoAna">Minha foto</a></button>
-    <br />
-    <img src="fotoAna.jpg" alt="Minha foto de óculos" id="fotoAna" />
+    <div class="buttons">
+      <button><a href="#sobre">Sobre mim</a></button>
+      <button><a href="#habilidades">Habilidades</a></button>
+      <button>
+        <a href="https://www.linkedin.com/in/anacarolinaraca/">Linkedin</a>
+      </button>
+      <button><a href="#fotoAna">Minha foto</a></button>
+    </div>
     <h1>Ana Carolina Rodrigues de Almeida César Alves</h1>
-    <h2 id="sobre">Sobre mim</h2>
-    <p>
-      Eu sou bacharel em Engenharia Química e Técnico em Química, tenho 24 anos,
-      atualmente estudante de <strong>Desenvolvimento Web</strong> na Trybe.
-    </p>
-    <br />
-    <p id="city"><strong>Belo Horizonte - Minas Gerais</strong></p>
-    <h2 id="habilidades">Habilidades</h2>
-    <ul>
-      <li class="html">HTML</li>
-      <li class="css">CSS</li>
-      <li class="excel">Excel</li>
-    </ul>
+    <div class="imagem">
+      <img src="fotoAna.jpg" alt="Minha foto de óculos" id="fotoAna" />
+      <div class="description">
+        <h2 id="sobre">Sobre mim</h2>
+        <p>
+          Eu sou bacharela em Engenharia Química e Técnica em Química, tenho 24
+          anos, atualmente em transição de carreira e estudante de
+          <strong>Desenvolvimento Web</strong> na Trybe.
+        </p>
+        <div class="city">
+          <p><strong>Belo Horizonte - Minas Gerais</strong></p>
+        </div>
+        <div class="skills">
+          <h2 id="habilidades">Habilidades</h2>
+          <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="excel">Excel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
